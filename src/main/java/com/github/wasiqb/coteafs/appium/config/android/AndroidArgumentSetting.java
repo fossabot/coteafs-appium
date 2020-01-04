@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright (c) 2017, Wasiq Bhamla.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,89 +15,16 @@
  */
 package com.github.wasiqb.coteafs.appium.config.android;
 
+import lombok.Getter;
+
 /**
  * @author wasiq.bhamla
  * @since Jan 18, 2018 8:55:02 PM
  */
+@Getter
 public class AndroidArgumentSetting {
-	private int		bootstrapPort;
-	private String	chromeDriverExePath;
-	private int		chromeDriverPort;
-	private boolean	suppressAdbKillServer;
-
-	/**
-	 * @author wasiq.bhamla
-	 * @since Jan 18, 2018 8:57:34 PM
-	 * @return the bootstrapPort
-	 */
-	public int getBootstrapPort () {
-		return this.bootstrapPort;
-	}
-
-	/**
-	 * @author wasiq.bhamla
-	 * @since Jan 18, 2018 8:57:34 PM
-	 * @return the chromeDriverExePath
-	 */
-	public String getChromeDriverExePath () {
-		return this.chromeDriverExePath;
-	}
-
-	/**
-	 * @author wasiq.bhamla
-	 * @since Jan 18, 2018 8:57:34 PM
-	 * @return the chromeDriverPort
-	 */
-	public int getChromeDriverPort () {
-		return this.chromeDriverPort;
-	}
-
-	/**
-	 * @author wasiq.bhamla
-	 * @since Jan 18, 2018 8:57:34 PM
-	 * @return the suppressAdbKillServer
-	 */
-	public boolean isSuppressAdbKillServer () {
-		return this.suppressAdbKillServer;
-	}
-
-	/**
-	 * @author wasiq.bhamla
-	 * @since Jan 18, 2018 8:57:34 PM
-	 * @param bootstrapPort
-	 *            the bootstrapPort to set
-	 */
-	public void setBootstrapPort (final int bootstrapPort) {
-		this.bootstrapPort = bootstrapPort;
-	}
-
-	/**
-	 * @author wasiq.bhamla
-	 * @since Jan 18, 2018 8:57:34 PM
-	 * @param chromeDriverExePath
-	 *            the chromeDriverExePath to set
-	 */
-	public void setChromeDriverExePath (final String chromeDriverExePath) {
-		this.chromeDriverExePath = chromeDriverExePath;
-	}
-
-	/**
-	 * @author wasiq.bhamla
-	 * @since Jan 18, 2018 8:57:34 PM
-	 * @param chromeDriverPort
-	 *            the chromeDriverPort to set
-	 */
-	public void setChromeDriverPort (final int chromeDriverPort) {
-		this.chromeDriverPort = chromeDriverPort;
-	}
-
-	/**
-	 * @author wasiq.bhamla
-	 * @since Jan 18, 2018 8:57:34 PM
-	 * @param suppressAdbKillServer
-	 *            the suppressAdbKillServer to set
-	 */
-	public void setSuppressAdbKillServer (final boolean suppressAdbKillServer) {
-		this.suppressAdbKillServer = suppressAdbKillServer;
-	}
+    private int     bootstrapPort;
+    private String  chromeDriverExePath;
+    private int     chromeDriverPort;
+    private boolean suppressAdbKillServer;
 }
